@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmus Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com logo e navegação -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Cosmus Tech Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Hero (Imagem de fundo com sobreposição) -->
+    <section id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2>Bem-vindo ao Futuro da Tecnologia</h2>
+            <p>Inovando o amanhã, hoje.</p>
+            <button onclick="scrollToSection('about')">Saiba Mais</button>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section id="services">
+        <h2>Nossos Serviços</h2>
+        <div class="service-card">
+            <h3>Desenvolvimento de Software</h3>
+            <p>Criação de aplicativos personalizados para atender às suas necessidades.</p>
+        </div>
+        <div class="service-card">
+            <h3>Consultoria Tecnológica</h3>
+            <p>Consultoria especializada para otimizar sua infraestrutura e processos tecnológicos.</p>
+        </div>
+        <div class="service-card">
+            <h3>Transformação Digital</h3>
+            <p>Ajudamos sua empresa a adotar novas tecnologias para crescer no mundo digital.</p>
+        </div>
+    </section>
+
+    <!-- Seção Quem Somos -->
+    <section id="about-us">
+        <h2>Quem Somos</h2>
+        <p>A <strong>Cosmus Tech</strong> é uma empresa inovadora no setor de tecnologia, dedicada a fornecer soluções digitais de ponta que transformam a maneira como as empresas e indivíduos interagem com o mundo digital. Com um time de profissionais altamente qualificados e apaixonados por inovação, nossa missão é ajudar nossos clientes a impulsionar seus negócios por meio da tecnologia, criando experiências digitais únicas e personalizadas.</p>
+        <p>Focamos em desenvolvimento de software, consultoria tecnológica e transformação digital, sempre buscando as melhores soluções para cada desafio, seja para pequenas empresas ou grandes corporações. Na Cosmus Tech, acreditamos que a tecnologia pode transformar o futuro, e estamos aqui para construir esse futuro com você.</p>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contact">
+        <h2>Entre em Contato</h2>
+        <form action="submit_form.php" method="POST">
+            <input type="text" name="nome" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu E-mail" required>
+            <textarea name="mensagem" placeholder="Sua Mensagem" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Cosmus Tech - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
